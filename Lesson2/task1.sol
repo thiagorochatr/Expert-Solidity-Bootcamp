@@ -13,7 +13,11 @@ contract DeleteFromDynamicArray {
         return array;
     }
 
-    function deleteItem(uint index) public {
+    function deleteArray() public {
+        delete array;
+    }
+
+    function r1deleteItem(uint index) public {
         uint len = array.length;
         require(index < len, "Index out of bounds.");
         
@@ -26,4 +30,28 @@ contract DeleteFromDynamicArray {
         delete array[len - 1];
         array.pop();
     }
+
+    function r2deleteItem(uint256 index) external {
+        unchecked {
+            for (; index < array.length - 1; ++index){
+                array[index] = array[index + 1];
+            }
+            assembly {
+                sstore(array.slot, sub(sload(array.slot), 1))
+            }
+        }
+    }
+
+    // function r3deleteItem(uint256 index) external {
+    //     unchecked {
+    //         for (; index < array.length - 1; ++index){
+    //             assembly {
+    //                 let nextIndex := add(index, 1)
+    //                 let nextValue := sload(add(array.slot, nextIndex))
+    //                 sstore(add(array.slot, index), nextValue)
+    //             }
+    //         }
+    //         assembly { sstore(array.slot, sub(sload(array.slot), 1)) }
+    //     }
+    // }
 }
