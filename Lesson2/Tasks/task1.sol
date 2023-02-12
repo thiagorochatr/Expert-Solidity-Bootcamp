@@ -27,7 +27,6 @@ contract DeleteFromDynamicArray {
         }
 
         // Resize the array.
-        delete array[len - 1];
         array.pop();
     }
 
