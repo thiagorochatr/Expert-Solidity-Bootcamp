@@ -1,3 +1,5 @@
+#1
+
 1. Why is client diversity important for Ethereum?
 
   Client diversity helps to ensure the security and decentralization of the network, making the network more resilient to attacks and bugs. By having multiple clients, Ethereum can also maintain its integrity and remain open and transparent, even if one implementation has a bug or issue. (Shared responsibility)
