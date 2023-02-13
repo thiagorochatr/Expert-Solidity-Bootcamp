@@ -1,4 +1,4 @@
-#3
+# 3
 
 1. What are the advantages and disadvantages of the 256 bit word length in the EVM?
 

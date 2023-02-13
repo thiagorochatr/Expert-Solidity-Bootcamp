@@ -1,4 +1,4 @@
-#1
+# 1
 
 1. Why is client diversity important for Ethereum?
 
