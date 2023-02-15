@@ -6,3 +6,6 @@
 - Memory
 - Storage
 - EVM Languages
+
+### Useful links:
+- https://soliditydeveloper.com/stacktoodeep
