@@ -42,13 +42,23 @@ contract DeleteFromDynamicArray {
         }
     }
 
-    // Not keeping the array sorted
-    function f3deleteItem(uint8 _index) external {
+    // Not keeping the array sorted - 1
+    function f3deleteItem(uint _index) external {
         //write function in unchecked solidity
         unchecked {
             array[_index] = array[array.length - 1];
             array.pop();
         }
+    }
+
+    // Not keeping the array sorted - 2
+    function f4deleteItem(uint _index) external {
+
+        // This line below costs more gas:
+        // require(array.length > 0, "Array is Empty");
+
+        array[_index] = array[array.length - 1];
+        array.pop();
     }
 
 }
