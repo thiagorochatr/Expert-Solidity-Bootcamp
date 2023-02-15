@@ -2,11 +2,13 @@
 
 1. Why is client diversity important for Ethereum?
 
-  Client diversity helps to ensure the security and decentralization of the network, making the network more resilient to attacks and bugs. By having multiple clients, Ethereum can also maintain its integrity and remain open and transparent, even if one implementation has a bug or issue. (Shared responsibility)
+  Client diversity helps to ensure the security and decentralization of the network, making the network more resilient to attacks and bugs. By having multiple clients, Ethereum can also maintain its integrity and remain open and transparent, even if one implementation has a bug or issue. (Shared responsibility for development)
 
   https://ethereum.org/en/developers/docs/nodes-and-clients/client-diversity/
 
 2. What information is held for an Ethereum account?
+
+  The nonce, balance, storageRoot & codeHash.
 
   There are two types of account:
   - Externally-owned account (EOA): controlled by anyone with the private keys.
@@ -46,3 +48,5 @@
         return msg.sender;
     }
   ```
+
+  We can't be sure so be carefully using msg.sender in view functions. If called in transaction, it cannot be faked: you must have the private key associated with the given account. But in a call, you are free to set the sender to any value you like.
