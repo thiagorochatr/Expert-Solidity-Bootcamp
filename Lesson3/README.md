@@ -1,5 +1,4 @@
-Topics:
-
+### Topics:
 - Ethereum data structures
 - Ethereum state
 - Transaction and Block details

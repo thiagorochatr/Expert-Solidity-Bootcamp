@@ -1,5 +1,4 @@
-Topics:
-
+### Topics:
 - Design Patterns for Solidity
 - Upgradeability Background
 - Approaches to Upgradeability
