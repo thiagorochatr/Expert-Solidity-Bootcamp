@@ -1,11 +1,14 @@
 ### Topics:
-- Security
-- Playtpus Finance
-- Wintermute Hack
-- Nomad Bridge Hack
-- Poly Network Hack
-- Arbitrum Critical Vulnerability
-- Best Practices
+- Foundry
+- Testing
+- Dependencies
+- Deploying Contracts
+- Cast
+- Debugging
+- Differential Testing
+- Forking
+- Cheat Codes
+- Vanity Addresses
 
 ### Useful links:
 - 

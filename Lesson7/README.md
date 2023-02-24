@@ -11,6 +11,8 @@
 - Data Availability
 - zkEVM Solutions
 - Polygon zkEVM
+- Security
+- Best Practices
 
 ### Useful links:
 - 
