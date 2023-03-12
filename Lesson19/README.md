@@ -1,5 +1,0 @@
-### Topics:
-- 
-
-### Useful links:
-- 
